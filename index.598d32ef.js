@@ -1,0 +1,2 @@
+var r=Array.from(document.querySelectorAll("tr th")).slice(0,4),e=document.querySelector("tbody"),t=Array.from(e.querySelectorAll("tr"));function n(r){return Number(r.replace(/[$,]/g,""))}r.forEach(function(r,o){r.addEventListener("click",function(){console.log(o),t.sort(function(r,e){var t=r.children[o].textContent.trim(),c=e.children[o].textContent.trim(),l=n(t),i=n(c);return isNaN(l)||isNaN(i)?t.localeCompare(c):l-i}).forEach(function(r){return e.appendChild(r)})})});
+//# sourceMappingURL=index.598d32ef.js.map
